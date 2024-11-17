@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const transcriptDiv = document.getElementById('transcript');
     const transcriptId = 'TICKET_ID'; // Remplace TICKET_ID par l'ID du ticket
 
-    fetch(`/transcripts/${transcriptId}.json`)
+    fetch(`https://seikam.github.io/Le-royaume-/transcripts/${transcriptId}.json`)
         .then(response => response.json())
         .then(data => {
             data.messages.forEach(msg => {
